@@ -3,11 +3,11 @@ baseURL = "http://example.org/"
 languageCode = "bg"
 theme = "hugo-zen"
 copyright = "Ивайло Кузев, 2017"
+DisqusShortname = "ivkuzev"
 
 [params]
-  logo      = "/images/profile.jpg"
+  logo   = "/images/profile.jpg"
   github = "https://github.com/ivoarch"
-  email     = "ivkuzev@gmail.com"
-  analytics = ""
-  hidefromhome = true
-  
+  email  = "ivkuzev@gmail.com"
+  RSSLink = "/index.xml"
+  analytics = "UA-41596463-2"
