@@ -1,0 +1,13 @@
+title = "Ивайло Кузев"
+baseURL = "http://example.org/"
+languageCode = "bg"
+theme = "hugo-zen"
+copyright = "Ивайло Кузев, 2017"
+
+[params]
+  logo      = "/images/profile.jpg"
+  github = "https://github.com/ivoarch"
+  email     = "ivkuzev@gmail.com"
+  analytics = ""
+  hidefromhome = true
+  
