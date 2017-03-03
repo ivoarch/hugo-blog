@@ -10,6 +10,9 @@ h4,
 h5,
 h6 { font-size: 1.5rem; }
 
+a { color: #498ED6 ; }
+a:hover { color: #498ED6; }
+
 img {
   max-width: 100%;
   height: auto;
