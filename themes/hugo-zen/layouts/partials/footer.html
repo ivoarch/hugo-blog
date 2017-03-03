@@ -5,7 +5,7 @@
 		<div class="footer-link">
 			{{ with .Site.Params.github }}<a href="{{ . }}" target="_blank">GitHub</a> &#183;{{ end }}
 			{{ with .Site.Params.email }}<a href="mailto:{{ . }}" target="_blank">Email</a> &#183;{{ end }}
-			{{ with .Site.Params.RSSLink }}<a href="{{ . }}" target="_blank">RSS</a> &#183;{{ end }}
+			{{ with .Site.Params.RSSLink }}<a href="{{ . }}" target="_blank">RSS</a>{{ end }}
 		</div>
 		<div class="copyright">&copy; {{ .Site.Copyright | safeHTML }}</div>
 	</footer>
