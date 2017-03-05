@@ -1,5 +1,5 @@
 title = " Блогът на Ивайло Кузев"
-baseURL = "http://example.org/"
+baseURL = "https://ivoarch.github.io"
 languageCode = "bg"
 theme = "hugo-zen"
 copyright = "Ивайло Кузев, 2012-2017"
