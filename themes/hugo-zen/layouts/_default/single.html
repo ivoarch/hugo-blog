@@ -7,9 +7,10 @@
         <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Day }} {{ index $.Site.Data.meseci (printf "%d" .Date.Month) }}, {{ .Date.Year }}</time></span>
         {{ if isset .Params "tags" }}
-           тагове: {{ range .Params.tags }}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+        <p class="tags"><small>
+           Тагове: {{ range .Params.tags }}<a class="tags" href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+            </small></p>
             {{ end }}
-        <br>
         <section itemprop="entry-text">
                 {{ .Content }}
                 <br>

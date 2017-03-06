@@ -12,6 +12,12 @@ h6 { font-size: 1.5rem; }
 
 a { color: #498ED6 ; }
 a:hover { color: #498ED6; }
+a.tags {
+  background-color: #EDEDED;
+  color: #f5666d;
+  padding-right: .2em;
+  padding-left: .2em;
+}
 
 img {
   max-width: 100%;
@@ -78,6 +84,7 @@ main {
   background: linear-gradient(to right, white, #E1E1E1, white);
 }
 
+/* based on https://github.com/auth0/kbd */
 kbd {
   font-family: Consolas, "Lucida Console", monospace;
   display: inline-block;
@@ -108,7 +115,6 @@ kbd {
   user-select: none;
 }
 
-/* based on https://github.com/auth0/kbd */
 kbd:hover, kbd:hover * {
   color: black;
   /* box-shadow: 1px 1px 1px #333; */
@@ -134,4 +140,3 @@ kbd:active kbd {
   box-shadow: 0px 0px 0px black;
   background: none;
 }
-
