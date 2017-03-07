@@ -5,11 +5,10 @@
     <article itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
         <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            {{ .Date.Day }} {{ index $.Site.Data.meseci (printf "%d" .Date.Month) }}, {{ .Date.Year }}</time></span>
+            {{ .Date.Day }} {{ index $.Site.Data.meseci (printf "%d" .Date.Month) }}, {{ .Date.Year }}
         {{ if isset .Params "tags" }}
-        <p class="tags"><small>
-           Тагове: {{ range .Params.tags }}<a class="tags" href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
-            </small></p>
+          // {{ range .Params.tags }}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> // {{ end }}
+</time></span> 
             {{ end }}
         <section itemprop="entry-text">
                 {{ .Content }}
@@ -22,3 +21,4 @@
 </main>
 
 {{ partial "footer.html" . }}
+
