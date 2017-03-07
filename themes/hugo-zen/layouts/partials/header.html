@@ -21,5 +21,6 @@
                 <div class="header-logo">
                     <a href="/"><img src="{{ .Site.Params.logo }}" width="60" height="60" alt="{{ .Site.Title }}"></a>
                 </div>
-                {{ if eq $isHomePage true }}<h1 class="site-title">{{ .Site.Title }}</h1>{{ end }}
+                {{ if eq $isHomePage true }}<h1 class="site-title">{{ .Site.Title }}</h1>
+                <p class="header-meta">Linux &#183; Gnome &#183; Emacs &#183; Zsh &#183; Git...</p>{{ end }}
             </header>
