@@ -1,7 +1,7 @@
 +++
 date = "2017-03-18"
 title = "Как да инсталираме Flatpak в StotinkaOS 7.x"
-tags = ["flatpak", "stotinkaos"]
+tags = ["flatpak", "stotinkaos", "gnome"]
 +++
 
 ## Какво е Flatpak ?
@@ -37,7 +37,7 @@ $ sudo yum install flatpak
 #### Инсталиране на GNOME runtimes хранилище
 
 ```
-$ flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+$ flatpak --user remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
 ```
 
 За повече информация и детайли посетете тази страница [1] http://flatpak.org/runtimes.html#gnome .
@@ -45,13 +45,13 @@ $ flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakre
 #### Инсталиране на GNOME apps хранилище
 
 ```
-$ flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
+$ flatpak --user remote-add gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
 ```
 
 След което за да изкараме списък на всички приложения от хранилището .
 
 ```
-$ flatpak remote-ls gnome-apps
+$ flatpak --user remote-ls gnome-apps
 ```
 
 За да инсталираме приложение от списъка .
@@ -59,7 +59,7 @@ $ flatpak remote-ls gnome-apps
 Пример gnome-maps 
 
 ```
-$ flatpak install gnome-apps org.gnome.Maps stable
+$ flatpak --user install gnome-apps org.gnome.Maps
 ```
 
 За да стартирате приложението .
