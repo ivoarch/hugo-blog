@@ -56,17 +56,21 @@ $ flatpak --user remote-ls gnome-apps
 
 За да инсталираме приложение от списъка .
 
-Пример gnome-maps 
+Пример  за да инсталираме [Epiphany](https://wiki.gnome.org/Apps/Web) .
 
 ```
-$ flatpak --user install gnome-apps org.gnome.Maps
+$ flatpak --user install gnome-apps org.gnome.Epiphany
 ```
 
 За да стартирате приложението .
 
 ```
-$ flatpak run org.gnome.Maps
+$ flatpak run org.gnome.Epiphany
 ```
 
-Някои други приложения като (pitivi, skype, Blender...) за Flatpak може да намерите [тук](http://flatpak.org/apps.html) .
+Или от меню Програми - Интернет - Web
+
+![img](https://www.stotinkaos.net/mfile/uploads/ivo/Screenshot%20from%202017-03-19%2017-57-54.png)
+
+Някои други приложения като (pitivi, skype, Blender...) за Flatpak може да намерите [тук](http://flatpak.org/apps.html) . Използвайте линията на команди понеже gnome-software в GNOME 3.14 няма съпорт за flatpak приложения , евентуално това ще бъде налично в StotinkaOS 7.4 , когато се очаква RHEL/CentOS да актуализират до GNOME 3.22 .
 
